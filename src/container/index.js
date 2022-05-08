@@ -1,0 +1,6 @@
+export { default as Header } from './Header/Header'
+export { default as Explore } from './Explore/Explore'
+export { default as Learn } from './Learn/Learn'
+export { default as Medical } from './Medical/Medical'
+export { default as Kid } from './Kid/Kid'
+export { default as Testimonial } from './Testimonial/Testimonial'
