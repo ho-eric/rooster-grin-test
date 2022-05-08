@@ -7,15 +7,29 @@ import "./Header.scss";
 const Header = () => {
   return (
     <div className="app__header app__flex">
+      <img src={images.hero} alt="hero" />
+      <div className="app__header-logo app__flex">
+        <motion.div
+          whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.7 }}
+          className="head-text"
+        >
+          <img src={images.logo_white} alt="logo" />
+        </motion.div>
+      </div>
       <div className="app__header-text app__flex">
-        {/* <img src={images.hero} alt="hero" /> */}
         <motion.h1
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="head-text"
         >
           Welcome to
-          <br />
+        </motion.h1>
+        <motion.h1
+          whileInView={{ x: [100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.7 }}
+          className="head-text"
+        >
           Rooster Grin
         </motion.h1>
         <button>Button Button</button>
