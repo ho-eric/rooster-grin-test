@@ -1,0 +1,53 @@
+.app__kid {
+  display: flex;
+
+  img {
+    position: relative;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+  }
+}
+
+.app__kid-container {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 50rem;
+}
+
+.app__kid-container-left {
+  display: flex;
+  flex: 1;
+}
+
+.app__kid-container-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 10rem;
+
+  h1 {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    color: var(--primary-color);
+    background-color: var(--orange-color);
+
+    padding: 15px 32px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
