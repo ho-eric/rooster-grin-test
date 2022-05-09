@@ -1,0 +1,113 @@
+.app__medical {
+  display: flex;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
+}
+
+.app__medical-container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.app__medical-text {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 5rem;
+  margin-left: 15rem;
+
+  h1 {
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--black-color);
+  }
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+}
+
+.app__medical-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 15rem;
+  margin-left: 5rem;
+  
+
+  @media screen and (max-width: 900px) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.app__medical-item {
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  padding-right: 6rem;
+
+  transition: all 0.3s ease-in-out;
+
+  div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    &:hover {
+      box-shadow: 0 0 10px #c7c2c3;
+    }
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding-right: 0rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media screen and (min-width: 2000px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin: 1rem 2rem;
+    p {
+      margin-top: 1rem;
+    }
+  }
+}

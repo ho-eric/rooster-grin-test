@@ -1,0 +1,32 @@
+.app__learn {
+  display: flex;
+  img {
+    position: relative;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+  }
+}
+
+.app__learn-text {
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+  }
+
+  button {
+    color: var(--primary-color);
+    background-color: var(--orange-color);
+
+    padding: 15px 32px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}

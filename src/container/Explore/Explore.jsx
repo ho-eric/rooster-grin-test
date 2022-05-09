@@ -7,7 +7,7 @@ import "./Explore.scss";
 const Explore = () => {
   return (
     <div className="app__explore app__flex">
-      <div className="app__explore-text app__flex">
+      <div className="app__explore-text">
         <h1 className="head-text">Lorem Ipsum</h1>
         <p className="p-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
