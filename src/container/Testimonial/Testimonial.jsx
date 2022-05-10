@@ -51,7 +51,7 @@ const Testimonial = () => {
                       <div
                         className="app__testimonial-navigation-dot"
                         key={item._id}
-                        style={index ===  curIndex ? { backgroundColor: "#FFA500" } : {backgroundColor: "#e3bf7d" }}
+                        style={index ===  curIndex ? { backgroundColor: "#ff9100" } : {backgroundColor: "#e3bf7d" }}
                       />
                     ))}
                   </div>
