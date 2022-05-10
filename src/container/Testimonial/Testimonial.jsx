@@ -46,6 +46,15 @@ const Testimonial = () => {
                 <div className="app__testimonial-right-content">
                   <h4>{testimonials[curIndex].nameDate}</h4>
                   <p className="p-text">{testimonials[curIndex].feedback}</p>
+                  <div className="app__testimonial-navigation">
+                    {testimonials.map((item, index) => (
+                      <div
+                        className="app__testimonial-navigation-dot"
+                        key={item._id}
+                        style={index ===  curIndex ? { backgroundColor: "#FFA500" } : {backgroundColor: "#e3bf7d" }}
+                      />
+                    ))}
+                  </div>
                 </div>
                 <div className="app__testimonial-btns app__flex">
                   <div

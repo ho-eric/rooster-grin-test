@@ -95,7 +95,7 @@
 
   @media screen and (max-width: 450px) {
     p {
-        font-size: 1rem;
+      font-size: 1rem;
     }
   }
 }
@@ -137,5 +137,18 @@
         height: 45px;
       }
     }
+  }
+}
+
+.app__testimonial-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .app__testimonial-navigation-dot {
+    flex-direction: column;
+    padding: 0.25rem;
+    border-radius: 10px;
+    margin: 0.4rem;
   }
 }
