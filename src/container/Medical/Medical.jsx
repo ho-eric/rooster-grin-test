@@ -8,7 +8,7 @@ const Medical = () => {
   const [medicals, setMedicals] = useState([]);
 
   useEffect(() => {
-    const medicalsQuery = '*[_type == "medical"]';
+    const medicalsQuery = '*[_type == "medical"] | order(order asc)';
 
     client.fetch(medicalsQuery).then((data) => {
       setMedicals(data);
@@ -32,7 +32,7 @@ const Medical = () => {
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__medical-item app__flex"
-              key={medical.name}
+              key={medical.order}
             >
               <div
                 className="app__flex"

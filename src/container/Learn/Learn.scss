@@ -1,6 +1,6 @@
 .app__learn {
   display: flex;
-  
+
   img {
     position: relative;
     object-fit: cover;
@@ -8,15 +8,24 @@
     background-repeat: repeat;
     background-position: center;
     width: 100%;
+
+    @media screen and (max-width: 450px) {
+      height: 50vh;
+    }
   }
 }
 
-.app__learn-text {
+.app__learn-container {
+  display: flex;
   position: absolute;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 100vw;
+  margin-right: 40rem;
 
   h1 {
+    text-align: left;
+
     text-transform: uppercase;
     color: var(--secondary-color);
   }
@@ -29,5 +38,11 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 450px) {
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
   }
 }

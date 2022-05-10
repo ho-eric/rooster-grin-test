@@ -19,19 +19,19 @@ const Header = () => {
       </div>
       <div className="app__header-text app__flex">
         <motion.h1
-          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
           transition={{ duration: 0.7 }}
           className="head-text"
         >
           Welcome to
         </motion.h1>
-        <motion.h1
-          whileInView={{ x: [100, 0], opacity: [0, 1] }}
+        <motion.h2
+          whileInView={{ x: [50, 0], opacity: [0, 1] }}
           transition={{ duration: 0.7 }}
           className="head-text"
         >
           Rooster Grin
-        </motion.h1>
+        </motion.h2>
         <button>Button Button</button>
       </div>
     </div>

@@ -1,0 +1,141 @@
+.app__testimonial {
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (min-width: 2000px) {
+    min-height: 450px;
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 450px) {
+    min-height: 100vh;
+  }
+}
+
+.app__testimonial-content {
+  height: 100%;
+  padding: 0 5rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--black-color);
+    font-family: var(--font-base);
+
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+  }
+
+  h5 {
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    min-height: 85vh;
+  }
+}
+
+.app__testimonial-title {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+
+  h1 {
+    text-align: left;
+    @media screen and (max-width: 450px) {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.app__testimonial-right {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.app__testimonial-right-content {
+  h4 {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 450px) {
+    p {
+        font-size: 1rem;
+    }
+  }
+}
+
+.app__testimonial-btns {
+  flex-direction: row;
+  margin-top: 1rem;
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: var(--secondary-color);
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+      cursor: pointer;
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 100px;
+      height: 100px;
+
+      svg {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

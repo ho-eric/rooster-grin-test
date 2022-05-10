@@ -8,29 +8,22 @@
     background-repeat: repeat;
     background-position: center;
     width: 100%;
+
+    @media screen and (max-width: 450px) {
+      height: 50vh;
+    }
   }
 }
 
 .app__kid-container {
   display: flex;
-  position: absolute;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 50rem;
-}
-
-.app__kid-container-left {
-  display: flex;
-  flex: 1;
-}
-
-.app__kid-container-right {
-  display: flex;
   flex-direction: column;
   flex: 1;
+  position: absolute;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 10rem;
+  margin-left: 50rem;
+  max-width: 25rem;
 
   h1 {
     text-transform: uppercase;
@@ -49,5 +42,13 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 450px) {
+    align-items: center;
+    margin-left: 10rem;
+    p {
+      text-align: center;
+    }
   }
 }
